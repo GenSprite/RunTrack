@@ -1,0 +1,68 @@
+[gd_scene format=3 uid="uid://cuy8k46rvbuxc"]
+
+[ext_resource type="Script" uid="uid://cj58v51jwdm8b" path="res://coin.gd" id="1_rwqht"]
+[ext_resource type="Texture2D" uid="uid://s6ecy1s1qg01" path="res://assets/coin/goldCoin1.png" id="2_jsmju"]
+[ext_resource type="Texture2D" uid="uid://ky3qf5mlffrq" path="res://assets/coin/goldCoin2.png" id="3_s0mny"]
+[ext_resource type="Texture2D" uid="uid://ccblwsr140lh6" path="res://assets/coin/goldCoin3.png" id="4_7cc30"]
+[ext_resource type="Texture2D" uid="uid://ukk5ocdaweu" path="res://assets/coin/goldCoin4.png" id="5_rojmm"]
+[ext_resource type="Texture2D" uid="uid://cbkpt36d6i1ge" path="res://assets/coin/goldCoin5.png" id="6_ls27i"]
+[ext_resource type="Texture2D" uid="uid://bkqxryuvjk2x1" path="res://assets/coin/goldCoin7.png" id="7_ssuvv"]
+[ext_resource type="Texture2D" uid="uid://rxxlkkbvx087" path="res://assets/coin/goldCoin6.png" id="8_6jg3o"]
+[ext_resource type="Texture2D" uid="uid://6ml2hfulu1vx" path="res://assets/coin/goldCoin9.png" id="9_rsyy1"]
+[ext_resource type="Texture2D" uid="uid://cryivdivojvs6" path="res://assets/coin/goldCoin8.png" id="10_y8m1o"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_sgv4e"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_jsmju")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_s0mny")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_7cc30")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_rojmm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_ls27i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_ssuvv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_6jg3o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_rsyy1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_y8m1o")
+}],
+"loop": true,
+"name": &"spin",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_jsmju"]
+
+[node name="Coin" type="Area2D" unique_id=642021488]
+script = ExtResource("1_rwqht")
+
+[node name="Sprite2D" type="AnimatedSprite2D" parent="." unique_id=1045242851]
+position = Vector2(5.9604645e-08, 1.1920929e-07)
+scale = Vector2(0.96875006, 1.0625)
+sprite_frames = SubResource("SpriteFrames_sgv4e")
+animation = &"spin"
+autoplay = "spin"
+frame_progress = 0.26488104
+flip_h = true
+flip_v = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1601419574]
+position = Vector2(-0.5, 0)
+shape = SubResource("CircleShape2D_jsmju")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

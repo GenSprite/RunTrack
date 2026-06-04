@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://clufrjehre165"
+path="res://.godot/imported/0604 (2).MP3-fc193e5caa9c0429443b346a3c0b74f4.mp3str"
+
+[deps]
+
+source_file="res://assets/sfx back/0604 (2)/0604 (2).MP3"
+dest_files=["res://.godot/imported/0604 (2).MP3-fc193e5caa9c0429443b346a3c0b74f4.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

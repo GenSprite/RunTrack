@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://ckf43wjthc1ov"]
+
+[ext_resource type="Script" uid="uid://gujbll8uvd5p" path="res://scripts/main_menu.gd" id="1_l6cm7"]
+[ext_resource type="Texture2D" uid="uid://l64n4u7q7x78" path="res://assets/backroundmainmenu.png" id="2_ekxnf"]
+
+[node name="MainMenu" type="Control" unique_id=245072493]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_l6cm7")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1906978840]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -15.9375
+anchor_top = -9.5
+anchor_right = 47.8125
+anchor_bottom = 27.45
+offset_left = 636.5
+offset_top = 380.0
+offset_right = -636.5
+offset_bottom = -380.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_ekxnf")
+expand_mode = 1
+stretch_mode = 6
+metadata/_edit_use_anchors_ = true
+
+[node name="TitleLabel" type="Label" parent="." unique_id=1455076085]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 533.0
+offset_top = 120.0
+offset_right = 733.0
+offset_bottom = 170.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 36
+text = "RUN TRACK"
+
+[node name="StartButton" type="Button" parent="." unique_id=1269895510]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 515.0
+offset_top = 255.0
+offset_right = 743.0
+offset_bottom = 313.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 36
+text = "START GAME"

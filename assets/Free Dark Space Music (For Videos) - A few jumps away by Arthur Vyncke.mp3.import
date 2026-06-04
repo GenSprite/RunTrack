@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bkhdq8otaebe5"
+path="res://.godot/imported/Free Dark Space Music (For Videos) - A few jumps away by Arthur Vyncke.mp3-e4c0017ef373f239cffb75639c61e52d.mp3str"
+
+[deps]
+
+source_file="res://assets/Free Dark Space Music (For Videos) - A few jumps away by Arthur Vyncke.mp3"
+dest_files=["res://.godot/imported/Free Dark Space Music (For Videos) - A few jumps away by Arthur Vyncke.mp3-e4c0017ef373f239cffb75639c61e52d.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=3.51
+beat_count=0
+bar_beats=4

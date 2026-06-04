@@ -1,10 +1,19 @@
 [gd_scene format=3 uid="uid://bihmap72fh1av"]
 
 [ext_resource type="Script" uid="uid://d10ofb5w6kbv1" path="res://scripts/puddle.gd" id="1_sj7di"]
+[ext_resource type="Texture2D" uid="uid://bpsorwknqjqx8" path="res://assets/SpaceShooterRedux/PNG/Power-ups/bold_silver.png" id="2_qlq6d"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sj7di"]
 
 [node name="puddle" type="Area2D" unique_id=1063797051]
 script = ExtResource("1_sj7di")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1625867302]
+position = Vector2(-4.7683716e-07, 7.1525574e-07)
+scale = Vector2(1.0526316, 0.6666666)
+texture = ExtResource("2_qlq6d")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=758970403]
+shape = SubResource("RectangleShape2D_sj7di")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

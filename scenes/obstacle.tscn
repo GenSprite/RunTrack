@@ -1,17 +1,36 @@
 [gd_scene format=3 uid="uid://cl1x7pneylb4w"]
 
 [ext_resource type="Script" uid="uid://bw6nfgtt7yr3v" path="res://scripts/obstacle.gd" id="1_cjuko"]
-[ext_resource type="Texture2D" uid="uid://1bisefnx4o6f" path="res://icon.svg" id="2_sh7k1"]
+[ext_resource type="Texture2D" uid="uid://bbhfeaxkpmq0m" path="res://assets/SpaceShooterRedux/PNG/Enemies/enemyBlack1.png" id="2_u2cgk"]
+[ext_resource type="Texture2D" uid="uid://ccjmvce4fqxph" path="res://assets/SpaceShooterRedux/PNG/Enemies/enemyBlack2.png" id="3_a6g20"]
+[ext_resource type="Texture2D" uid="uid://btfknqhgkvm4q" path="res://assets/SpaceShooterRedux/PNG/Enemies/enemyBlack3.png" id="4_5yxnq"]
+[ext_resource type="Texture2D" uid="uid://bm68rbp747a7r" path="res://assets/SpaceShooterRedux/PNG/Enemies/enemyBlack4.png" id="5_ykrpf"]
+[ext_resource type="Texture2D" uid="uid://bg8mbs85j4eiu" path="res://assets/SpaceShooterRedux/PNG/Enemies/enemyBlack5.png" id="6_bl8p2"]
+[ext_resource type="Texture2D" uid="uid://chju0xtt3s7mv" path="res://assets/SpaceShooterRedux/PNG/Enemies/enemyBlue1.png" id="7_croka"]
+[ext_resource type="Texture2D" uid="uid://1wy8bwocgnmk" path="res://assets/SpaceShooterRedux/PNG/Enemies/enemyBlue2.png" id="8_6h5oe"]
+[ext_resource type="Texture2D" uid="uid://cf14lpk6x580x" path="res://assets/SpaceShooterRedux/PNG/Enemies/enemyBlue3.png" id="9_idbsq"]
+[ext_resource type="Texture2D" uid="uid://cq7noaxa4wj27" path="res://assets/SpaceShooterRedux/PNG/Enemies/enemyBlue4.png" id="10_nff2i"]
+[ext_resource type="Texture2D" uid="uid://2h1j78sukst2" path="res://assets/SpaceShooterRedux/PNG/Enemies/enemyBlue5.png" id="11_iafri"]
+[ext_resource type="Texture2D" uid="uid://by7pnfjx3w7og" path="res://assets/SpaceShooterRedux/PNG/Enemies/enemyGreen1.png" id="12_2ebg6"]
+[ext_resource type="Texture2D" uid="uid://bnlqkmv045giu" path="res://assets/SpaceShooterRedux/PNG/Enemies/enemyGreen2.png" id="13_ux1bk"]
+[ext_resource type="Texture2D" uid="uid://se62v4ovhyoj" path="res://assets/SpaceShooterRedux/PNG/Enemies/enemyGreen3.png" id="14_psm4a"]
+[ext_resource type="Texture2D" uid="uid://8dng6lukbh7d" path="res://assets/SpaceShooterRedux/PNG/Enemies/enemyGreen4.png" id="15_ecb7i"]
+[ext_resource type="Texture2D" uid="uid://xv2rqvijh0uc" path="res://assets/SpaceShooterRedux/PNG/Enemies/enemyGreen5.png" id="16_qx32r"]
+[ext_resource type="Texture2D" uid="uid://qcjeuvgvydq3" path="res://assets/SpaceShooterRedux/PNG/Enemies/enemyRed1.png" id="17_i2l0l"]
+[ext_resource type="Texture2D" uid="uid://bagxhrithgs6v" path="res://assets/SpaceShooterRedux/PNG/Enemies/enemyRed2.png" id="18_msona"]
+[ext_resource type="Texture2D" uid="uid://bc4shlqrgnt2c" path="res://assets/SpaceShooterRedux/PNG/Enemies/enemyRed3.png" id="19_72j8t"]
+[ext_resource type="Texture2D" uid="uid://djr4jfx0fklwk" path="res://assets/SpaceShooterRedux/PNG/Enemies/enemyRed4.png" id="20_m3k15"]
+[ext_resource type="Texture2D" uid="uid://bx7nqbn0wb3th" path="res://assets/SpaceShooterRedux/PNG/Enemies/enemyRed5.png" id="21_7iq0v"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4dvvg"]
 
 [node name="Obstacle" type="Area2D" unique_id=1188971358]
 script = ExtResource("1_cjuko")
+obstacle_textures = Array[Texture2D]([ExtResource("2_u2cgk"), ExtResource("3_a6g20"), ExtResource("4_5yxnq"), ExtResource("5_ykrpf"), ExtResource("6_bl8p2"), ExtResource("7_croka"), ExtResource("8_6h5oe"), ExtResource("9_idbsq"), ExtResource("10_nff2i"), ExtResource("11_iafri"), ExtResource("12_2ebg6"), ExtResource("13_ux1bk"), ExtResource("14_psm4a"), ExtResource("15_ecb7i"), ExtResource("16_qx32r"), ExtResource("17_i2l0l"), ExtResource("18_msona"), ExtResource("19_72j8t"), ExtResource("20_m3k15"), ExtResource("21_7iq0v"), null])
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=81195522]
 position = Vector2(-4.7683716e-07, -4.7683716e-07)
-scale = Vector2(0.15624999, 0.15624999)
-texture = ExtResource("2_sh7k1")
+scale = Vector2(0.5, 0.5)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=475013038]
 shape = SubResource("RectangleShape2D_4dvvg")
